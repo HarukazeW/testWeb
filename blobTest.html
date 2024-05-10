@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <body>
+    <!-- Remove the download attribute and add target="_blank" to open in a new tab -->
+    <a href='#' id="link" target="_blank">Open in new tab</a>
+    <script>
+      let blob = new Blob(["Welcome to W3Docs"], {type: 'text/html'});
+      document.getElementById('link').href = URL.createObjectURL(blob);
+    </script>
+  </body>
+</html>
